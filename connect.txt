@@ -1,0 +1,4 @@
+echo "${STUDENT}"
+eval `ssh-agent`
+ssh-add - <<< "${STUDENT}"
+ ssh -o ServerAliveInterval=30 -L 3306:localhost:3306 btle@mse-msci-245.uwaterloo.ca
